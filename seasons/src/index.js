@@ -2,21 +2,32 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  state = { lat: null, errorMessage: "" };
 
-    this.state = { lat: null, errorMessage: "" };
+  // This is the bulky way to type out the componentDidMount()
+  // componentDidMount() {
+  //   console.log("component did mount");
+  //   window.navigator.geolocation.getCurrentPosition(
+  //     position => {
+  //       this.setState({ lat: position.coords.latitude });
+  //       console.log("The state is: ", this.state.lat);
+  //     },
+  //     err => {
+  //       this.setState({ errorMessage: err.message });
+  //       console.log("This is the err: ", err);
+  //     }
+  //   );
+  // }
 
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      position => {
-        this.setState({ lat: position.coords.latitude });
-        console.log("The state is: ", this.state.lat);
-      },
-      err => {
-        console.log("THis is the err: ", err);
-        this.setState({ errorMessage: err.message });
-      }
+      position => this.setState({ lat: position.coords.latitude }),
+      err => this.setState({ errorMessage: err.message })
     );
+  }
+
+  componentDidUpdate() {
+    console.log("My component was just updated. it rerendered!");
   }
 
   render() {
