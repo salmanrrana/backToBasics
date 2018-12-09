@@ -12,6 +12,8 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   });
 
+  renderedList.shift();
+
   return <div className="ui relaxed divided list">{renderedList}</div>;
 };
 
