@@ -1,6 +1,6 @@
 ### `Run the Project`
 
--In the project directory, you can run:
+In the project directory, you can run:
 
 - npm start
 
@@ -27,6 +27,6 @@ To Learn this app in depth, please check out this course by Stephen Grider:
 
 For more classes by Stephen Grider, check out:
 
-- https://www.rallycoding.com/
-  &
+- https://www.rallycoding.com/<br>
+  &<br>
 - https://www.udemy.com/user/sgslo/
