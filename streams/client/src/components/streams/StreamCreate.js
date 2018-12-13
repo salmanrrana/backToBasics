@@ -1,5 +1,7 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+import { connect } from "react-redux";
+import { createStream } from "../../actions";
 
 class StreamCreate extends React.Component {
   renderError({ error, touched }) {
@@ -12,6 +14,8 @@ class StreamCreate extends React.Component {
     }
   }
 
+  // This function is informing the form what values to place in the form
+  // Also giving particular className to div if an error is found
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
     return (
@@ -23,9 +27,10 @@ class StreamCreate extends React.Component {
     );
   };
 
-  onSubmit(formValues) {
-    console.log(formValues);
-  }
+  // This function will create the stream
+  onSubmit = formValues => {
+    this.props.createStream(formValues);
+  };
 
   render() {
     return (
@@ -47,6 +52,8 @@ class StreamCreate extends React.Component {
   }
 }
 
+// This function is lettig the form know what an error is
+// and what the error message is
 const validate = formValues => {
   const errors = {};
 
@@ -60,7 +67,14 @@ const validate = formValues => {
   return errors;
 };
 
-export default reduxForm({
+// This is creating a variable that will help us wire up reduxForm
+// and connect on the same component at the same time
+const formWrapped = reduxForm({
   form: "streamCreate",
   validate
 })(StreamCreate);
+
+export default connect(
+  null,
+  { createStream }
+)(formWrapped);
