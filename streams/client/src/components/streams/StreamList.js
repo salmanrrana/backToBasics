@@ -8,6 +8,9 @@ class StreamList extends React.Component {
     this.props.fetchStreams();
   }
 
+  // This checkes the current userID with the userID of the streams
+  // if the ID's match, the creator of a stream will see the "Edit" and "Delete"
+  // button on their streams
   renderAdmin(stream) {
     if (stream.userId === this.props.currentUserId) {
       return (
@@ -19,6 +22,8 @@ class StreamList extends React.Component {
     }
   }
 
+  // This is a helper function that will map through the list of Streams
+  // and render the list of streams in a list
   renderList() {
     return this.props.streams.map(stream => {
       return (
@@ -34,6 +39,7 @@ class StreamList extends React.Component {
     });
   }
 
+  // This function shows the user the "Create Stream" button if they are signed in
   renderCreate() {
     if (this.props.isSignedIn) {
       return (
