@@ -16,28 +16,21 @@
       "id": 3
     },
     {
-      "title": "I created this stream",
-      "description": "This was made by me",
-      "userId": "105131869507073893218",
+      "title": "Test",
+      "description": "This stream is about refactoring",
       "id": 4
     },
     {
-      "title": "Title",
-      "description": "Of the new stream",
+      "title": "New testing",
+      "description": "testing",
       "userId": "105131869507073893218",
       "id": 5
     },
     {
-      "title": "Unexpected Behavior",
-      "description": "What the heck is happening",
+      "title": "More security is  good",
+      "description": "really great in fact!",
       "userId": "105131869507073893218",
       "id": 6
-    },
-    {
-      "title": "holding history",
-      "description": "programmatic navigation",
-      "userId": "105131869507073893218",
-      "id": 7
     }
   ]
 }
