@@ -19,6 +19,18 @@
       "title": "Test",
       "description": "This stream is about refactoring",
       "id": 4
+    },
+    {
+      "title": "I'm going to create this stream here",
+      "description": "And I will probably delete it late",
+      "userId": "105131869507073893218",
+      "id": 5
+    },
+    {
+      "title": "But first another stream",
+      "description": "to add additional content",
+      "userId": "105131869507073893218",
+      "id": 6
     }
   ]
 }
