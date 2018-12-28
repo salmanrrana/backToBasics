@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `What does it do?`
 
-This is a project that uses the "Unsplash" API to perform a search and return pictures associated to that search.
+This project is takes a user location using navigator.geolocation.getCurrentPosition from the browser and then provide feedback to the user once permission is given to access location.
 
 ### `Learn More:`
 
