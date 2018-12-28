@@ -21,6 +21,7 @@ Additional Tools:
 
 - Redux Dev Tools
 - JSON Server
+- RTMP Server
 
 To Learn this app in depth, please check out this course by Stephen Grider:
 
