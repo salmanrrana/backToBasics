@@ -14,7 +14,7 @@ You will also see any lint errors in the console.
 
 ## `What does it do?`
 
-This app showcases how to pass information between components with "Context" in React.
+This app showcases how to pass information between components with "Context" in React rather than using Redux.
 
 ## Learning
 

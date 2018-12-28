@@ -23,6 +23,12 @@ Additional Tools:
 - JSON Server
 - RTMP Server
 
+### `What does it do?`
+
+This app is meant to act like a clone of twitch. A user can sign in, create streams, and watch streams. Currently the functionality is being being built out
+
+### `Learn More:`
+
 To Learn this app in depth, please check out this course by Stephen Grider:
 
 - https://www.udemy.com/react-redux/?couponCode=4MORE1234
@@ -32,7 +38,3 @@ For more classes by Stephen Grider, check out:
 - https://www.rallycoding.com/<br>
   &<br>
 - https://www.udemy.com/user/sgslo/
-
-### `What does it do?`
-
-This app is meant to act like a clone of twitch. A user can sign in, create streams, and watch streams. Currently the functionality is being being built out
